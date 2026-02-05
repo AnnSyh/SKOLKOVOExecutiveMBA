@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@source inline("bg-gradient-to-br");
+@source inline("from-[#db469f]");
+@source inline("to-[#2188ff]");
+@source inline("bg-clip-text");
+
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.raleway-semi-bold {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+    font-size: 16px;
+	font-weight: 400;
+  	font-style: normal;
+
+}
+
+.bg-img {
+	background-image: url(../img/bg-fon.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.bg-img-2 {
+	background-image: url(../img/bg-fon2.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.bg-title {
+	background-image: url(../img/bg-title.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+@media (min-width: 1440px) {
+    .container {
+        max-width:1440px;
+    }
+}
+
+.stretched-link {
+    position: static;
+}
+
+.stretched-link:after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1
+}
+
+.button {
+	@apply p-7 bg-white;
+}
+.button-big {
+	@apply bg-white px-8 py-7 text-violet font-bold text-2xl cursor-pointer relative flex items-baseline gap-4;
+
+	&:after {
+		content: "";
+		display: block;
+		width:10px;
+		height: 15px;
+		background-color: currentColor;
+		clip-path: polygon(0 0, 0% 100%, 100% 50%);
+	}
+}
