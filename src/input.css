@@ -7,6 +7,12 @@
 @source inline("to-[#2188ff]");
 @source inline("bg-clip-text");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .raleway-regular {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -85,4 +91,26 @@ body {
 		background-color: currentColor;
 		clip-path: polygon(0 0, 0% 100%, 100% 50%);
 	}
+}
+.more-details {
+	@apply text-white font-bold text-xl cursor-pointer relative flex items-baseline gap-2;
+
+	&:after {
+		content: "";
+		display: block;
+		width:6px;
+		height: 11px;
+		background-color: currentColor;
+		clip-path: polygon(0 0, 0% 100%, 100% 50%);
+	}
+}
+
+.card-interest {
+	@apply  flex flex-col text-tertiary border-t-8  p-6 h-[538px] relative;
+}
+.card-interest-time {
+	@apply w-full flex justify-between text-sm font-semibold tracking-[-0.6px];
+}
+.card-interest-content {
+	@apply flex flex-col gap-4;
 }
