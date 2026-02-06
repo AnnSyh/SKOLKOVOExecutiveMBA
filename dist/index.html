@@ -3,14 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./output.css" rel="stylesheet">
+        <link href="../dist/output.css" rel="stylesheet">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="./index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+</script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@latest/dist/fancybox.umd.js">
+</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@latest/dist/fancybox.css" />
 
+	<!-- Подключаем CSS Swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+	<script src="../src/index.js">
+</script>
     </head>
 
     <body class="bg-[#10182A] ">
@@ -288,6 +297,259 @@
 				</div>
 			</section>
 
+			<!-- ---------------------------- -->
+			<section class="bg-tertiary gap-4 py-20">
+				<div class="grid grid-cols-16 mb-[88px] px-6">
+					<div class="col-span-7 text-[#10182A] text-[56px] font-semibold tracking-[-0.6px] uppercase leading-none">
+						премии и аккредитации
+					</div>
+					<div class="col-span-7 text-[#AAA9A9] text-2xl font-semibold tracking-[-0.6px]">
+						Высокое качество образовательной программы SKOLKOVO Executive MBA подтверждено ведущими мировыми рейтингами, международными и национальными аккредитациями
+					</div>
+				</div>
+				<div>
+				<!-- ----swiper---- -->
+					<div class="swiper swiper1">
+						<!-- Обертка слайдов -->
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<article class="bg-tertiary h-full p-6 flex flex-col min-h-[240px] border">
+									<img class="block w-[40px] h-[40px] rounded-full mb-8" src="../img/logo1.svg" alt="">
+									<div class="mt-auto text-[#AAA9A9] text-sm tracking-[-0.6px]">
+										Аккредитация Национального аккредитационного совета (НАСДОБР)
+									</div>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="bg-tertiary h-full p-6 flex flex-col min-h-[240px] border">
+									<img class="block w-[66px] h-[36px] rounded-full mb-8" src="../img/logo2.svg" alt="">
+									<div class="mt-auto text-[#AAA9A9] text-sm tracking-[-0.6px]">
+										Международная аккредитация EQUIS (EFMD) - 2019-2024
+									</div>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="bg-tertiary h-full p-6 flex flex-col min-h-[240px] border">
+									<img class="block w-[40px] h-[40px] rounded-full mb-8" src="../img/logo3.svg" alt="">
+									<div class="mt-auto text-[#AAA9A9] text-sm tracking-[-0.6px]">
+										Международная аккредитация Education Quality Accreditation Agency ★★★★★
+									</div>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="bg-tertiary h-full p-6 flex flex-col min-h-[240px] border">
+									<img class="block w-[40px] h-[40px] rounded-full mb-8" src="../img/logo1.svg" alt="">
+									<div class="mt-auto text-[#AAA9A9] text-sm tracking-[-0.6px]">
+										Аккредитация Национального аккредитационного совета (НАСДОБР)
+									</div>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="bg-tertiary h-full p-6 flex flex-col min-h-[240px] border">
+									<img class="block w-[40px] h-[40px] rounded-full mb-8" src="../img/logo1.svg" alt="">
+									<div class="mt-auto text-[#AAA9A9] text-sm tracking-[-0.6px]">
+										Аккредитация Национального аккредитационного совета (НАСДОБР)
+									</div>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="bg-tertiary h-full p-6 flex flex-col min-h-[240px] border">
+									<img class="block w-[40px] h-[40px] rounded-full mb-8" src="../img/logo1.svg" alt="">
+									<div class="mt-auto text-[#AAA9A9] text-sm tracking-[-0.6px]">
+										Аккредитация Национального аккредитационного совета (НАСДОБР)
+									</div>
+								</article>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- <section class="bg-white py-[120px] px-[24px]">
+				<div class="grid grid-cols-16 mb-[88px] px-6">
+					<div class="col-span-16 text-[#10182A] text-[56px] font-semibold tracking-[-0.6px] uppercase leading-none">
+						Структура программы
+					</div>
+				</div>
+			</section> -->
+
+			<section class="bg-tertiary py-[104px] px-6">
+				<div class="grid grid-cols-16">
+					<div class="col-span-16 lg:col-span-7">
+						<div class="text-[#AAA9A9] text-2xl font-semibold tracking-[-0.6px] mb-[80px]">
+							для кого программа
+						</div>
+						<div class="text-5xl text-secondary font-semibold tracking-[-0.6px]">
+							Для топ-менеджеров и владельцев бизнеса, которым важны:
+						</div>
+					</div>
+					<div class="col-span-16 lg:col-span-9">
+						<div class="grid grid-cols-12">
+							<div class="col-span-12 md:col-span-6 flex flex-col gap-4 min-h-[360px] h-full pt-6">
+								<div class="px-6 border-l h-full flex flex-col">
+									<img class="w-[67px] h-[64px]" src="../img/forwhom-vert.svg" alt="" />
+									<div class="mt-auto">
+										<div class="text-[#10182A] text-[28px] font-semibold tracking-[-0.6px] mb-8 leading-none">
+											Трансформация роли лидера
+										</div>
+										<div class="text-[#AAA9A9] text-base tracking-[-0.6px] leading-[115%] min-h-[92px]">
+											Переход от операционного управления к стратегическому мышлению и устойчивой системе принятия решений, когда привычные управленческие инструменты не работают
+										</div>
+									</div>
+								</div>
+								<hr>
+							</div>
+							<div class="col-span-12 md:col-span-6 flex flex-col gap-4 min-h-[360px] h-full pt-6">
+								<div class="px-6 border-l h-full flex flex-col">
+									<img class="w-[67px] h-[64px] rotate-90" src="../img/forwhom-vert.svg" alt="" />
+									<div class="mt-auto">
+										<div class="text-[#10182A] text-[28px] font-semibold tracking-[-0.6px] mb-8 leading-none">
+											Переосмысление траектории
+										</div>
+										<div class="text-[#AAA9A9] text-base tracking-[-0.6px] leading-[115%] min-h-[92px]">
+											Достигнуты высокие результаты, и возникает запрос на пересмотр следующего шага — увидеть карьеру и бизнес как цельный долгосрочный проект, а не набор тактических решений
+										</div>
+									</div>
+								</div>
+								<hr>
+							</div>
+							<div class="col-span-12 md:col-span-6 flex flex-col gap-4 min-h-[360px] h-full pt-6">
+								<div class="px-6 border-l h-full flex flex-col">
+									<img class="w-[67px] h-[64px]" src="../img/forwhom-vert.svg" alt="" />
+									<div class="mt-auto">
+										<div class="text-[#10182A] text-[28px] font-semibold tracking-[-0.6px] mb-8 leading-none">
+											Сильное управленческое окружение
+										</div>
+										<div class="text-[#AAA9A9] text-base tracking-[-0.6px] leading-[115%] min-h-[92px]">
+											Необходимость в обмене опытом и стратегическом диалоге в среде равных
+										</div>
+									</div>
+								</div>
+								<hr>
+							</div>
+							<div class="col-span-12 md:col-span-6 flex flex-col gap-4 min-h-[360px] h-full pt-6">
+								<div class="px-6 border-l h-full flex flex-col">
+									<img class="w-[67px] h-[64px] rotate-90" src="../img/forwhom-vert.svg" alt="" />
+									<div class="mt-auto">
+										<div class="text-[#10182A] text-[28px] font-semibold tracking-[-0.6px] mb-8 leading-none">
+											Ответ на вопрос о наследии
+										</div>
+										<div class="text-[#AAA9A9] text-base tracking-[-0.6px] leading-[115%] min-h-[92px]">
+											Вы задумываетесь, какой след оставит ваш бизнес для семьи, общества и индустрии. Стремитесь сделать этот вклад более существенным и осмысленным
+										</div>
+									</div>
+								</div>
+								<hr>
+							</div>
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="bg-white pt-[120px] px-[24px]">
+				<div class="grid grid-cols-12">
+					<div class="col-span-12 mb-12">
+						<div class="text-[#10182A] text-[56px] font-semibold tracking-[-0.6px] uppercase leading-none mb-12">
+							Преподаватели и эксперты
+						</div>
+						<div class="text-xl font-semibold tracking-[-0.6px] flex gap-0">
+							<button class="bg-secondary text-tertiary rounded-full py-4 px-6 hover:bg-opacity-20">преподаватели</button>
+							<button class="bg-tertiary text-secondary py-4 px-6 hover:bg-opacity-20">эксперты</button>
+						</div>
+					</div>
+					<div class="col-span-3">
+						<article class="h-full">
+							<figure class="flex w-full">
+								<img class="object-cover w-full h-full"
+									src="../img/kalinin.jpg"
+									alt="" />
+							</figure>
+							<div class="mt-4">
+								<div class="text-secondary text-xl font-semibold tracking-[-0.6px] mb-6">Алексей Калинин</div>
+								<div class="text-[#AAA9A9] text-base font-semibold tracking-[-0.6px] mr-[50px]">
+									Профессор бизнес-практики, академический директор Executive MBA, проректор по исследованиям Школы управления СКОЛКОВО
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="col-span-3">
+						<article class="h-full">
+							<figure class="flex w-full">
+								<img class="object-cover w-full h-full"
+									src="../img/vood.jpg"
+									alt="" />
+							</figure>
+							<div class="mt-4">
+								<div class="text-secondary text-xl font-semibold tracking-[-0.6px] mb-6">Джек Вуд</div>
+								<div class="text-[#AAA9A9] text-base font-semibold tracking-[-0.6px] mr-[50px]">
+									Приглашенный профессор СКОЛКОВО, профессор CEIBS, IMD
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="col-span-3">
+						<article class="h-full">
+							<figure class="flex w-full">
+								<img class="object-cover w-full h-full"
+									src="../img/mironuk.jpg"
+									alt="" />
+							</figure>
+							<div class="mt-4">
+								<div class="text-secondary text-xl font-semibold tracking-[-0.6px] mb-6">Светлана Миронюк</div>
+								<div class="text-[#AAA9A9] text-base font-semibold tracking-[-0.6px] mr-[50px]">
+									Профессор бизнес-практики, проректор по операционной деятельности и цифровому развитию Школы управления СКОЛКОВО
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="col-span-3">
+						<article class="h-full">
+							<figure class="flex w-full">
+								<img class="object-cover w-full h-full"
+									src="../img/tildikov.jpg"
+									alt="" />
+							</figure>
+							<div class="mt-4">
+								<div class="text-secondary text-xl font-semibold tracking-[-0.6px] mb-6">Александр Тильдиков</div>
+								<div class="text-[#AAA9A9] text-base font-semibold tracking-[-0.6px] mr-[50px]">
+									Профессор бизнес-практики Школы управления СКОЛКОВО
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="col-span-12 mt-[48px] mb-[104px]">
+						<button class="more-details !text-secondary bg-tertiary py-[25px] px-[40px] mx-auto">
+							показать еще
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- <section class="bg-[#0F182A]">
+				<div class="py-[104px] px-[24px] p-6">
+					<div class="grid grid-cols-12">
+						<div class="col-span-12 text-[56px] font-semibold tracking-[-0.6px] uppercase leading-none mb-[90px]">
+							как поступить
+						</div>
+
+						<div class="col-span-3">
+							1
+						</div>
+
+					</div>
+				</div>
+			</section> -->
+
+			<!-- ---------------------------- -->
+
 			<section class="bg-[#F7F7F7]">
 				<div class="grid grid-cols-16 gap-4 py-20 px-6">
 					<div class="col-span-16 text-[#10182A] text-[56px] font-semibold tracking-[-0.6px] uppercase">
@@ -377,20 +639,257 @@
 				</div>
 			</section>
 
-			<section class="bg-white">
-				<div class="grid grid-cols-16 gap-4 py-20 px-6">
-					<div class="col-span-16 text-[#10182A] text-[56px] font-semibold tracking-[-0.6px] uppercase">
-						Консультанты программы
+			<section class="bg-white relative py-[104px] px-6">
+				<div class="col-span-16 text-[#10182A] text-[56px] font-semibold tracking-[-0.6px] uppercase pb-10">
+					Консультанты программы
+				</div>
+				<!-- ----swiper---- -->
+				<div class="swiper">
+					<!-- Обертка слайдов -->
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<article class="bg-tertiary text-secondary h-full px-6 py-8 flex flex-col min-h-[538px]">
+								<img class="block w-[120px] h-[120px] rounded-full mb-8" src="../img/person1.jpg" alt="">
+								<div class="flex flex-col gap-6">
+									<div class="text-[28px] font-semibold">
+										Мария Прудникова
+									</div>
+									<div class="text-[#AAA9A9] text-base">
+										Директор по работе с ключевыми клиентами Школы управления СКОЛКОВО
+									</div>
+								</div>
+								<div class="mt-auto flex flex-col gap-0">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M20 0C8.955 0 0 8.955 0 20C0 31.045 8.955 40 20 40C31.045 40 40 31.045 40 20C40 8.955 31.045 0 20 0ZM29.8233 13.7017L26.54 29.1683C26.2983 30.265 25.645 30.5317 24.7333 30.015L19.7333 26.3317L17.3233 28.655C17.09 28.955 16.7283 29.1467 16.3233 29.1467C16.32 29.1467 16.3183 29.1467 16.315 29.1467L16.67 24.0567L25.9367 15.6867C26.3367 15.3317 25.8467 15.13 25.315 15.485L13.8667 22.695L8.93333 21.155C7.86667 20.8167 7.83667 20.0883 9.15833 19.565L28.435 12.135C29.3317 11.8083 30.1117 12.3483 29.8217 13.7033L29.8233 13.7017Z" fill="#10182A"/>
+										</svg>
+									<hr class="my-4">
+									<a href="tel:+79997632876">+7 999 763 28 76</a>
+									<hr class="my-4">
+									<a href="mailto:Maria_Prudnikova@skolkovo.ru">Maria_Prudnikova@skolkovo.ru</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="bg-tertiary text-secondary h-full px-6 py-8 flex flex-col min-h-[538px]">
+								<img class="block w-[120px] h-[120px] rounded-full mb-8" src="../img/person2.jpg" alt="">
+								<div class="flex flex-col gap-6">
+									<div class="text-[28px] font-semibold">
+										Екатерина Ефимова
+									</div>
+									<div class="text-[#AAA9A9] text-base">
+										Руководитель направления по работе с клиентами
+									</div>
+								</div>
+								<div class="mt-auto flex flex-col gap-0">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M20 0C8.955 0 0 8.955 0 20C0 31.045 8.955 40 20 40C31.045 40 40 31.045 40 20C40 8.955 31.045 0 20 0ZM29.8233 13.7017L26.54 29.1683C26.2983 30.265 25.645 30.5317 24.7333 30.015L19.7333 26.3317L17.3233 28.655C17.09 28.955 16.7283 29.1467 16.3233 29.1467C16.32 29.1467 16.3183 29.1467 16.315 29.1467L16.67 24.0567L25.9367 15.6867C26.3367 15.3317 25.8467 15.13 25.315 15.485L13.8667 22.695L8.93333 21.155C7.86667 20.8167 7.83667 20.0883 9.15833 19.565L28.435 12.135C29.3317 11.8083 30.1117 12.3483 29.8217 13.7033L29.8233 13.7017Z" fill="#10182A"/>
+										</svg>
+									<hr class="my-4">
+									<a href="tel:+79055715078">+7 905 571 50 78</a>
+									<hr class="my-4">
+									<a href="mailto:Ekaterina_Efimova@skolkovo.ru">Ekaterina_Efimova@skolkovo.ru</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="bg-tertiary text-secondary h-full px-6 py-8 flex flex-col min-h-[538px]">
+								<img class="block w-[120px] h-[120px] rounded-full mb-8" src="../img/person3.jpg" alt="">
+								<div class="flex flex-col gap-6">
+									<div class="text-[28px] font-semibold">
+										Юлия Читах
+									</div>
+									<div class="text-[#AAA9A9] text-base">
+										Директор по работе с ключевыми клиентами Школы управления СКОЛКОВО
+									</div>
+								</div>
+								<div class="mt-auto flex flex-col gap-0">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M20 0C8.955 0 0 8.955 0 20C0 31.045 8.955 40 20 40C31.045 40 40 31.045 40 20C40 8.955 31.045 0 20 0ZM29.8233 13.7017L26.54 29.1683C26.2983 30.265 25.645 30.5317 24.7333 30.015L19.7333 26.3317L17.3233 28.655C17.09 28.955 16.7283 29.1467 16.3233 29.1467C16.32 29.1467 16.3183 29.1467 16.315 29.1467L16.67 24.0567L25.9367 15.6867C26.3367 15.3317 25.8467 15.13 25.315 15.485L13.8667 22.695L8.93333 21.155C7.86667 20.8167 7.83667 20.0883 9.15833 19.565L28.435 12.135C29.3317 11.8083 30.1117 12.3483 29.8217 13.7033L29.8233 13.7017Z" fill="#10182A"/>
+										</svg>
+									<hr class="my-4">
+									<a href="tel:+79997632876">+7 999 763 28 76</a>
+									<hr class="my-4">
+									<a href="mailto:Julia_Chitakh@skolkovo.ru">Julia_Chitakh@skolkovo.ru</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="bg-tertiary text-secondary h-full px-6 py-8 flex flex-col min-h-[538px]">
+								<img class="block w-[120px] h-[120px] rounded-full mb-8" src="../img/person.jpg" alt="">
+								<div class="flex flex-col gap-6">
+									<div class="text-[28px] font-semibold">
+										Мария Прудникова1
+									</div>
+									<div class="text-[#AAA9A9] text-base">
+										Директор 1 по работе с ключевыми клиентами Школы управления СКОЛКОВО
+									</div>
+								</div>
+								<div class="mt-auto flex flex-col gap-0">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M20 0C8.955 0 0 8.955 0 20C0 31.045 8.955 40 20 40C31.045 40 40 31.045 40 20C40 8.955 31.045 0 20 0ZM29.8233 13.7017L26.54 29.1683C26.2983 30.265 25.645 30.5317 24.7333 30.015L19.7333 26.3317L17.3233 28.655C17.09 28.955 16.7283 29.1467 16.3233 29.1467C16.32 29.1467 16.3183 29.1467 16.315 29.1467L16.67 24.0567L25.9367 15.6867C26.3367 15.3317 25.8467 15.13 25.315 15.485L13.8667 22.695L8.93333 21.155C7.86667 20.8167 7.83667 20.0883 9.15833 19.565L28.435 12.135C29.3317 11.8083 30.1117 12.3483 29.8217 13.7033L29.8233 13.7017Z" fill="#10182A"/>
+										</svg>
+									<hr class="my-4">
+									<a href="tel:+79997632876">+7 999 763 28 76</a>
+									<hr class="my-4">
+									<a href="mailto:Maria_Prudnikova@skolkovo.ru">Maria_Prudnikova@skolkovo.ru</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="bg-tertiary text-secondary h-full px-6 py-8 flex flex-col min-h-[538px]">
+								<img class="block w-[120px] h-[120px] rounded-full mb-8" src="../img/person.jpg" alt="">
+								<div class="flex flex-col gap-6">
+									<div class="text-[28px] font-semibold">
+										Мария Прудникова2
+									</div>
+									<div class="text-[#AAA9A9] text-base">
+										Директор 2 по работе с ключевыми клиентами Школы управления СКОЛКОВО
+									</div>
+								</div>
+								<div class="mt-auto flex flex-col gap-0">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M20 0C8.955 0 0 8.955 0 20C0 31.045 8.955 40 20 40C31.045 40 40 31.045 40 20C40 8.955 31.045 0 20 0ZM29.8233 13.7017L26.54 29.1683C26.2983 30.265 25.645 30.5317 24.7333 30.015L19.7333 26.3317L17.3233 28.655C17.09 28.955 16.7283 29.1467 16.3233 29.1467C16.32 29.1467 16.3183 29.1467 16.315 29.1467L16.67 24.0567L25.9367 15.6867C26.3367 15.3317 25.8467 15.13 25.315 15.485L13.8667 22.695L8.93333 21.155C7.86667 20.8167 7.83667 20.0883 9.15833 19.565L28.435 12.135C29.3317 11.8083 30.1117 12.3483 29.8217 13.7033L29.8233 13.7017Z" fill="#10182A"/>
+										</svg>
+									<hr class="my-4">
+									<a href="tel:+79997632876">+7 999 763 28 76</a>
+									<hr class="my-4">
+									<a href="mailto:Maria_Prudnikova@skolkovo.ru">Maria_Prudnikova@skolkovo.ru</a>
+								</div>
+							</article>
+						</div>
 					</div>
-
-					<div class="card-consultants col-span-16 md:col-span-5 bg-[#F7F7F7]">
-
-					</div>
-
 				</div>
 			</section>
 
+			<footer class="grid grid-cols-16 gap-4 pt-[56px] px-6">
+				<div class="col-span-16 lg:col-span-8 text-[#5E606C] font-semibold text-lg tracking-[-0.6px] flex flex-col gap-4">
+					<div class="flex gap-2 items-start">
+						<div class="min-h-[24[px] min-w-[24px]">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5 9.92285C5 14.7747 9.24448 18.7869 11.1232 20.3252C11.3921 20.5454 11.5281 20.6568 11.7287 20.7132C11.8849 20.7572 12.1148 20.7572 12.271 20.7132C12.472 20.6567 12.6071 20.5463 12.877 20.3254C14.7557 18.7871 18.9999 14.7751 18.9999 9.9233C18.9999 8.08718 18.2625 6.32605 16.9497 5.02772C15.637 3.72939 13.8566 3 12.0001 3C10.1436 3 8.36301 3.7295 7.05025 5.02783C5.7375 6.32616 5 8.08674 5 9.92285Z" stroke="#5E606C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M10 9C10 10.1046 10.8954 11 12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7C10.8954 7 10 7.89543 10 9Z" stroke="#5E606C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div>143026, Московская область, город Одинцово, деревня СКОЛКОВО, улица Новая, дом 100</div>
+					</div>
+					<div class="flex gap-2 items-start">
+						<div class="min-h-[24[px] min-w-[24px]">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 6L10.1076 10.6123L10.1097 10.614C10.7878 11.1113 11.1271 11.3601 11.4988 11.4562C11.8272 11.5412 12.1725 11.5412 12.501 11.4562C12.8729 11.36 13.2132 11.1105 13.8926 10.6123C13.8926 10.6123 17.8101 7.60594 20 6M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8036C21 16.9215 21 17.4805 20.7822 17.9079C20.5905 18.2842 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2842 3.21799 17.9079C3 17.4801 3 16.9203 3 15.8002Z" stroke="#5E606C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<a href="mailto:info@skolkovo.ru">info@skolkovo.ru</a>
+					</div>
+					<div class="flex gap-2 items-start">
+						<div class="min-h-[24[px] min-w-[24px]">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.50246 4.25722C9.19873 3.4979 8.46332 3 7.64551 3H4.89474C3.8483 3 3 3.8481 3 4.89453C3 13.7892 10.2108 21 19.1055 21C20.1519 21 21 20.1516 21 19.1052L21.0005 16.354C21.0005 15.5361 20.5027 14.8009 19.7434 14.4971L17.1069 13.4429C16.4249 13.1701 15.6483 13.2929 15.0839 13.7632L14.4035 14.3307C13.6089 14.9929 12.4396 14.9402 11.7082 14.2088L9.79222 12.2911C9.06079 11.5596 9.00673 10.3913 9.66895 9.59668L10.2363 8.9163C10.7066 8.35195 10.8305 7.57516 10.5577 6.89309L9.50246 4.25722Z" stroke="#5E606C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<a href="tel:+74955393003">+7 495 539 30 03</a>
+					</div>
+
+					<div class="soc-icons flex gap-0 mt-16">
+						<a href="#">
+							<svg class="block min-h-[40[px] min-w-[40px]" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect width="40" height="40" rx="20" fill="#272E3F"/>
+								<mask id="mask0_8549_26998" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="12" width="16" height="16">
+								<rect x="12" y="12" width="16" height="16" fill="url(#pattern0_8549_26998)"/>
+								</mask>
+								<g mask="url(#mask0_8549_26998)">
+								<rect x="12" y="12" width="16" height="16" fill="#F7F7F7"/>
+								</g>
+								<defs>
+								<pattern id="pattern0_8549_26998" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#image0_8549_26998" transform="scale(0.00195312)"/>
+								</pattern>
+								<image id="image0_8549_26998" width="512" height="512" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+								</defs>
+								</svg>
+						</a>
+						<a href="#" class="relative -left-2.5">
+							<svg class="block min-h-[40[px] min-w-[40px]" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="0.5" y="0.5" width="41" height="41" rx="20.5" fill="#272E3F"/>
+								<rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#10182A"/>
+								<path d="M21.7079 25.9949C16.292 25.9949 13.2029 22.2449 13.0742 16.0049H15.7871C15.8762 20.5849 17.8762 22.5249 19.4603 22.9249V16.0049H22.0149V19.9549C23.5792 19.7849 25.2226 17.9849 25.777 16.0049H28.3316C27.9058 18.4449 26.1236 20.2449 24.8563 20.9849C26.1236 21.5849 28.1534 23.1549 28.9257 25.9949H26.1138C25.5098 24.0949 24.005 22.6249 22.0149 22.4249V25.9949H21.7079Z" fill="#F7F7F7"/>
+							</svg>
+						</a>
+						<a href="#" class="relative -left-5">
+							<svg class="block min-h-[40[px] min-w-[40px]" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="0.5" y="0.5" width="41" height="41" rx="20.5" fill="#272E3F"/>
+								<rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#10182A"/>
+								<path d="M30.0897 20.8206C30.0897 20.7297 30.0158 20.6545 29.9249 20.6502C26.6639 20.5267 24.6793 20.1107 23.2909 18.7223C21.8995 17.331 21.485 15.3449 21.3615 12.0768C21.3586 11.9859 21.2834 11.9121 21.1911 11.9121H20.8106C20.7198 11.9121 20.6445 11.9859 20.6403 12.0768C20.5167 15.3435 20.1022 17.331 18.7109 18.7223C17.3211 20.1122 15.3378 20.5267 12.0768 20.6502C11.9859 20.6531 11.9121 20.7283 11.9121 20.8206V21.201C11.9121 21.2919 11.9859 21.3671 12.0768 21.3714C15.3378 21.4949 17.3225 21.9109 18.7109 23.2993C20.0994 24.6878 20.5139 26.6683 20.6389 29.9235C20.6417 30.0144 20.7169 30.0882 20.8092 30.0882H21.1911C21.282 30.0882 21.3572 30.0144 21.3615 29.9235C21.4864 26.6683 21.9009 24.6878 23.2894 23.2993C24.6793 21.9095 26.6625 21.4949 29.9235 21.3714C30.0144 21.3686 30.0882 21.2933 30.0882 21.201V20.8206H30.0897Z" fill="#F7F7F7"/>
+							</svg>
+						</a>
+						<a href="#" class="relative -ml-[2rem]">
+							<svg class="block min-h-[40[px] min-w-[40px]" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="0.5" y="0.5" width="41" height="41" rx="20.5" fill="#272E3F"/>
+								<rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#10182A"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M29.2124 16.8737C29.0153 16.1362 28.4345 15.5553 27.6969 15.3581C26.36 15 20.9991 15 20.9991 15C20.9991 15 15.6384 15 14.3016 15.3581C13.564 15.5553 12.9832 16.1362 12.786 16.8737C12.4277 18.2107 12.4277 20.9999 12.4277 20.9999C12.4277 20.9999 12.4277 23.7893 12.786 25.1262C12.9832 25.8636 13.564 26.4447 14.3016 26.6417C15.6384 27 20.9991 27 20.9991 27C20.9991 27 26.36 27 27.6969 26.6417C28.4345 26.4447 29.0153 25.8636 29.2124 25.1262C29.5707 23.7893 29.5707 20.9999 29.5707 20.9999C29.5707 20.9999 29.5707 18.2107 29.2124 16.8737Z" fill="#F7F7F7"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M19.2852 23.5717L23.7388 21.0003L19.2852 18.4287V23.5717Z" fill="#10182A"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-span-16 sm:col-span-8 lg:col-span-4 flex flex-col text-[28px] font-semibold tracking-[-0.6px]">
+					<a href="">Программы</a>
+					<a href="">Профессора</a>
+					<a href="">События</a>
+					<a href="">Исследования</a>
+					<a href="">Медиа</a>
+					<a href="">Выпускники</a>
+				</div>
+				<div class="col-span-16 sm:col-span-8 lg:col-span-4 flex flex-col text-[28px] font-semibold tracking-[-0.6px]">
+					<a href="">О школе</a>
+					<a href="">Кампус</a>
+					<a href="">Программа лояльности</a>
+					<a href="">Skolkovo Shop</a>
+					<a href="">Контакты</a>
+				</div>
+
+				<div class="col-span-16 mt-[149px] mb-[40px]">
+					<svg class="w-full" width="1375" height="203" viewBox="0 0 1375 203" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M147.265 22.4406L132.959 48.247C125.666 40.1124 102.945 28.0507 79.1022 28.0507C52.7348 28.0507 40.3927 38.4294 40.3927 55.5401C40.3927 74.6143 56.3814 79.3829 89.4808 87.5175C129.873 97.0546 155.119 109.116 155.119 145.301C155.119 185.974 122.3 202.524 82.1877 202.524C51.8933 202.524 22.7209 192.987 0.000129789 175.596L14.3058 148.667C23.843 158.485 52.4543 174.193 82.7487 174.193C107.433 174.193 121.458 165.217 121.458 148.667C121.458 128.471 100.981 122.58 66.76 113.885C27.4895 103.506 7.57373 91.7251 7.57373 60.5892C7.57373 21.3186 38.9902 0.000331824 79.9437 0.000331824C106.872 0.000331824 130.154 9.81797 147.265 22.4406ZM204.018 200.561H172.602V1.68335H204.018V104.067L297.707 1.40285H332.489L253.948 89.481L336.977 200.561H301.353L234.032 109.397L204.018 140.533V200.561ZM319.625 100.982C319.625 47.9665 360.579 0.000331824 415.558 0.000331824C472.5 0.000331824 510.649 51.3325 510.649 101.262C510.649 154.277 469.975 201.963 414.997 201.963C358.054 201.963 319.625 152.033 319.625 100.982ZM415.277 173.632C455.389 173.632 478.391 136.606 478.391 100.982C478.391 63.1137 453.426 28.6117 415.277 28.6117C375.165 28.6117 351.603 65.0772 351.603 100.982C351.603 138.569 376.287 173.632 415.277 173.632ZM667.437 200.561H529.149V1.40285H560.565V172.791H667.437V200.561ZM710.35 200.561H678.933V1.68335H710.35V104.067L804.038 1.40285H838.82L760.279 89.481L843.308 200.561H807.684L740.364 109.397L710.35 140.533V200.561ZM825.957 100.982C825.957 47.9665 866.91 0.000331824 921.889 0.000331824C978.831 0.000331824 1016.98 51.3325 1016.98 101.262C1016.98 154.277 976.307 201.963 921.328 201.963C864.386 201.963 825.957 152.033 825.957 100.982ZM921.608 173.632C961.721 173.632 984.722 136.606 984.722 100.982C984.722 63.1137 959.757 28.6117 921.608 28.6117C881.496 28.6117 857.934 65.0772 857.934 100.982C857.934 138.569 882.618 173.632 921.608 173.632ZM1007.05 1.40285H1040.43L1100.46 162.132L1160.21 1.40285H1193.59L1115.33 200.561H1085.59L1007.05 1.40285ZM1183.6 100.982C1183.6 47.9665 1224.55 0.000331824 1279.53 0.000331824C1336.47 0.000331824 1374.62 51.3325 1374.62 101.262C1374.62 154.277 1333.95 201.963 1278.97 201.963C1222.03 201.963 1183.6 152.033 1183.6 100.982ZM1279.25 173.632C1319.36 173.632 1342.36 136.606 1342.36 100.982C1342.36 63.1137 1317.4 28.6117 1279.25 28.6117C1239.14 28.6117 1215.58 65.0772 1215.58 100.982C1215.58 138.569 1240.26 173.632 1279.25 173.632Z" fill="url(#paint0_linear_8549_26970)"/>
+						<defs>
+						<linearGradient id="paint0_linear_8549_26970" x1="688.707" y1="-112.439" x2="688.707" y2="200.561" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#98B0FF"/>
+						<stop offset="1" stop-color="#98B0FF" stop-opacity="0"/>
+						</linearGradient>
+						</defs>
+					</svg>
+				</div>
+
+				<div class="h-[68px] leading-[68px] col-span-16 text-[#5E606C] font-semibold text-lg tracking-[-0.6px] flex justify-between align-center border-t border-[#5E606C]">
+					<span>SKOLKOVO © 2025</span>
+					<a href="#" target="_blank">Договор оферты</a>
+					<a href="#" target="_blank">Политика обработки данных</a>
+				</div>
+
+			</footer>
+
 		</div>
+
+
+
+		<!-- Подключаем JS Swiper -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		<script>
+			// Инициализация Swiper
+			const swiper = new Swiper('.swiper', {
+				slidesPerView: 4,  // Показываем по 4 слайда
+				spaceBetween: 16,   // Промежуток между слайдами
+				loop: true, // Зацикливание
+			});
+
+			const swiper1 = new Swiper('.swiper1', {
+				slidesPerView: 5,  // Показываем по 4 слайда
+				spaceBetween: 0,   // Промежуток между слайдами
+				loop: true, // Зацикливание
+			});
+
+		</script>
 
 
     </body>
