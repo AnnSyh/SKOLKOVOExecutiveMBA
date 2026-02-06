@@ -6,13 +6,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx tailwindcss@3.1.8 -i ./src/input.css -o ./dist/output.css --watch",
     "dev": "npx tailwindcss@3.1.8 -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "npx tailwindcss@3.1.8 -i ./src/input.css -o ./dist/output.css --minify"
+    "copy:assets": "cp -r src/*.html dist/ && cp -r src/*.js dist/ && cp -r img/ dist/ 2>/dev/null || true",
+    "build": "npm run copy:assets && tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^3.1.8"
   }
 }
