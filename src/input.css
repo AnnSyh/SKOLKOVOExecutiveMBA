@@ -48,6 +48,11 @@ body {
 	background-repeat: no-repeat;
 	background-position: center bottom;
 }
+.bg-timeline {
+	background-image: url(../img/timeline-bg.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
 
 .container {
     margin-left: auto;
@@ -88,10 +93,35 @@ body {
 		display: block;
 		width:10px;
 		height: 15px;
+		min-width:10px;
+		min-height: 15px;
 		background-color: currentColor;
 		clip-path: polygon(0 0, 0% 100%, 100% 50%);
 	}
+	&:hover {
+		@apply bg-violet text-white;
+	}
 }
+.button-big-invers {
+	@apply bg-violet px-8 py-7 text-white font-bold text-2xl cursor-pointer relative flex items-baseline gap-4;
+
+	&:after {
+		content: "";
+		display: block;
+		width:10px;
+		height: 15px;
+		min-width:10px;
+		min-height: 15px;
+		background-color: currentColor;
+		clip-path: polygon(0 0, 0% 100%, 100% 50%);
+	}
+
+	&:hover {
+		@apply bg-white text-violet;
+	}
+}
+
+
 .more-details {
 	@apply text-white font-bold text-xl cursor-pointer relative flex items-baseline gap-2;
 
@@ -113,4 +143,95 @@ body {
 }
 .card-interest-content {
 	@apply flex flex-col gap-4;
+}
+
+.btn-menu {
+	@apply bg-tertiary text-secondary py-4 px-6;
+
+	&:hover {
+		@apply bg-secondary text-tertiary rounded-full;
+	}
+}
+.btn-menu-active {
+	@apply bg-secondary text-tertiary rounded-full;
+}
+
+.btn-menu-small {
+	@apply bg-white text-gray py-1 px-2;
+
+	/* &:hover {
+		@apply rounded-full;
+	} */
+}
+.btn-menu-small-active {
+	@apply rounded-full;
+}
+
+
+
+    /* Дополнительные стили для плавности */
+    .accordion-content {
+        transition: max-height 0.3s ease-out;
+    }
+
+    .rotate-45 {
+        transform: rotate(45deg);
+    }
+
+
+.open .accordion-icon-bg {
+	@apply bg-[#402ECB] text-white;
+}
+
+/* Дополнительные стили для таймлайна */
+.timeline-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.timeline-step {
+	min-width: 0;
+}
+
+.before-line-top,
+.before-line-bottom {
+	@apply relative;
+
+	&:before {
+		content:'';
+		width: 2px;
+		height: 24px;
+		background-color: #F7F7F7;
+		position: absolute;
+		left: 0px;
+
+		@apply hidden md:block;
+	}
+
+}
+.before-line-top {
+
+	&:before {
+		top:10px;
+	}
+}
+.before-line-bottom {
+
+	&:before {
+		bottom:10px;
+	}
+}
+
+
+.whats-included li {
+	@apply  mb-3 relative pl-4 leading-[130%];
+
+	&:before{
+		content: '/';
+		position: relative;
+		left: -10px;
+		color: #9DA3B8;
+		font-size: 1rem;
+
+	}
 }
