@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit', // ← ВАЖНО: добавьте эту строку
   content: [
     "./src/**/*.{html,js}",
     "./src/*.{html,js}",
@@ -11,6 +12,7 @@ module.exports = {
       },
       gridColumn: {
         'span-16': 'span 16 / span 16', // Добавляем кастомный класс col-span-18
+        'span-15': 'span 15 / span 15', // Добавляем кастомный класс col-span-15
         'span-14': 'span 14 / span 14', // Добавляем кастомный класс col-span-14
         'span-13': 'span 13 / span 13', // Добавляем кастомный класс col-span-13
         'span-7': 'span 7 / span 7', // Добавляем кастомный класс col-span-7

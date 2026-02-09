@@ -53,6 +53,16 @@ body {
 	background-repeat: no-repeat;
 	background-position: left top;
 }
+.bg-slider {
+	background-image: url(../img/bg-slider.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.bg-img-bottom-fon {
+	background-image: url(../img/img-bottom-fon.png);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
 
 .container {
     margin-left: auto;

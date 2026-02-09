@@ -27,6 +27,18 @@ const swiper1 = new Swiper('.swiper1', {
 	loop: true, // Зацикливание
 });
 
+const swiper2 = new Swiper('.swiper2', {
+	slidesPerView: 3,  // Показываем по 4 слайда
+	spaceBetween: 16,   // Промежуток между слайдами
+	loop: true, // Зацикливание
+});
+
+const swiper3 = new Swiper('.swiper3', {
+	slidesPerView: 3,  // Показываем по 4 слайда
+	spaceBetween: 16,   // Промежуток между слайдами
+	loop: true, // Зацикливание
+});
+
 class accordionAccordion
 {
 	constructor()
@@ -107,4 +119,34 @@ class accordionAccordion
 document.addEventListener('DOMContentLoaded', () =>
 {
 	new accordionAccordion();
+
+	// Смена главного изображения по клику на миниатюры в блоке slider-imgs
+	const sliders = document.querySelectorAll('.slider-js');
+
+	sliders.forEach(slider =>
+	{
+		// Основное изображение в левой колонке (col-span-7)
+		const mainImage = slider.querySelector('.main-img-js img');
+		// Миниатюры в блоке slider-imgs
+		const thumbs = slider.querySelectorAll('.slider-imgs-js a');
+
+		if (!mainImage || !thumbs.length)
+		{
+			return;
+		}
+
+		thumbs.forEach(thumb =>
+		{
+			thumb.addEventListener('click', (event) =>
+			{
+				event.preventDefault();
+
+				const thumbImg = thumb.querySelector('img');
+				if (thumbImg && thumbImg.src)
+				{
+					mainImage.src = thumbImg.src;
+				}
+			});
+		});
+	});
 });
