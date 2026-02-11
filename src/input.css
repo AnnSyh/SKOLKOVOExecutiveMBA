@@ -95,8 +95,9 @@ body {
 .button {
 	@apply p-7 bg-white;
 }
-.button-big {
-	@apply bg-white px-8 py-7 text-violet font-bold text-2xl cursor-pointer relative flex items-baseline gap-4;
+.button-big,
+.button-big-invers {
+	@apply px-8 py-7 text-2xl cursor-pointer relative flex items-baseline justify-center gap-4;
 
 	&:after {
 		content: "";
@@ -112,19 +113,15 @@ body {
 		@apply bg-violet text-white;
 	}
 }
-.button-big-invers {
-	@apply bg-violet px-8 py-7 text-white font-bold text-2xl cursor-pointer relative flex items-baseline gap-4;
+.button-big {
+	@apply bg-white text-violet;
 
-	&:after {
-		content: "";
-		display: block;
-		width:10px;
-		height: 15px;
-		min-width:10px;
-		min-height: 15px;
-		background-color: currentColor;
-		clip-path: polygon(0 0, 0% 100%, 100% 50%);
+	&:hover {
+		@apply bg-violet text-white;
 	}
+}
+.button-big-invers {
+	@apply bg-violet text-white;
 
 	&:hover {
 		@apply bg-white text-violet;
@@ -245,3 +242,19 @@ body {
 
 	}
 }
+
+select option {
+    color: #374151;
+}
+
+/* песочные часы */
+/* .hourglass {
+	clip-path: polygon(
+		0% 0%,
+		5% 50%,
+		0% 100%,
+		100% 100%,
+		95% 50%,
+		100% 0%
+	);
+} */

@@ -862,6 +862,10 @@ video {
   margin-top: 30px;
 }
 
+.mt-\[56px\] {
+  margin-top: 56px;
+}
+
 .block {
   display: block;
 }
@@ -2101,7 +2105,6 @@ body {
   display: flex;
   cursor: pointer;
   align-items: baseline;
-  justify-content: center;
   gap: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -2109,6 +2112,7 @@ body {
   padding-bottom: 1.75rem;
   font-size: 1.5rem;
   line-height: 2rem;
+  font-weight: 700;
   &:after {
     content: "";
     display: block;
@@ -2116,6 +2120,7 @@ body {
     height: 15px;
     min-width:10px;
     min-height: 15px;
+    justify-content: center;
     background-color: currentColor;
     -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
             clip-path: polygon(0 0, 0% 100%, 100% 50%);
