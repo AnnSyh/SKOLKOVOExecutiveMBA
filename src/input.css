@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Явно импортируем плагин */
+@import '@tailwindcss/typography';
+
 @source inline("bg-gradient-to-br");
 @source inline("from-[#db469f]");
 @source inline("to-[#2188ff]");

@@ -31,6 +31,31 @@ const swiper2 = new Swiper('.swiper2', {
 	slidesPerView: 3,  // Показываем по 4 слайда
 	spaceBetween: 16,   // Промежуток между слайдами
 	loop: true, // Зацикливание
+
+	// Добавляем пагинацию для мобильных
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	breakpoints: {
+		0: {
+			slidesPerView: 1,  // Показываем по 3 слайда на мобилках
+			spaceBetween: 12   // Меньший промежуток на мобилках
+		},
+		480: {
+			slidesPerView: 2,  // Возвращаем 5 слайдов
+			spaceBetween: 16,   // Стандартный промежуток
+			// // Скрываем пагинацию на десктопе
+			// pagination: false
+		},
+		768: {
+			slidesPerView: 3,  // Возвращаем 5 слайдов
+			spaceBetween: 16,   // Стандартный промежуток
+			// Скрываем пагинацию на десктопе
+			pagination: false
+		}
+	}
 });
 
 const swiper3 = new Swiper('.swiper3', {
