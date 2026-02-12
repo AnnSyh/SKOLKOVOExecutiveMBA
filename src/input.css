@@ -143,7 +143,8 @@ body {
 }
 
 .card-interest {
-	@apply  flex flex-col text-tertiary border-t-8  p-6 h-[538px] relative;
+	/* @apply  flex flex-col h-full flex-1 text-tertiary border-t-8  p-6 lg:min-h-[538px] relative; */
+	@apply  flex flex-col h-full flex-1 text-tertiary border-t-8  p-6  min-h-[450px] lg:min-h-[538px] relative;
 }
 .card-interest-time {
 	@apply w-full flex justify-between text-sm font-semibold tracking-[-0.6px];
@@ -151,6 +152,60 @@ body {
 .card-interest-content {
 	@apply flex flex-col gap-4;
 }
+
+.swiper5 .swiper-slide {
+	height: auto !important;
+	display: flex;
+}
+.card-interest {
+	/* height: 480px !important; Фиксированная высота */
+	display: flex !important;
+	flex-direction: column !important;
+}
+.card-interest-content {
+	flex: 1 !important;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: flex-end !important;
+	margin-top: 0 !important; /* Убираем процентные отступы */
+}
+
+.swiper5 {
+	/* Пагинация всегда видна и не исчезает */
+	.swiper-pagination {
+		position: absolute !important;
+		left: 0 !important;
+		right: 0 !important;
+		z-index: 100 !important;
+		display: flex !important;
+		justify-content: center !important;
+		padding: 10px 0 !important;
+	}
+
+	/* Стили для пуль (точек) */
+	.swiper-pagination-bullet {
+		width: 8px !important;
+		height: 8px !important;
+		background: #ccc !important;
+		opacity: 0.7 !important;
+		margin: 0 4px !important;
+		transition: all 0.3s ease !important;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: #4B5EE5 !important;
+		opacity: 1 !important;
+		width: 12px !important;
+		border-radius: 4px !important;
+	}
+
+	/* Динамические пули */
+	.swiper-pagination-bullet-active-main {
+		transform: scale(1.2) !important;
+	}
+
+}
+
 
 .btn-menu {
 	@apply bg-tertiary text-secondary py-4 px-6;

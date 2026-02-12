@@ -39,6 +39,60 @@ const swiper3 = new Swiper('.swiper3', {
 	loop: true, // Зацикливание
 });
 
+const swiper4 = new Swiper('.swiper4', {
+	slidesPerView: 7,  // Показываем по 5 слайда
+	spaceBetween: 16,   // Промежуток между слайдами
+	loop: true, // Зацикливание
+
+	// Добавляем адаптивность для мобильных устройств
+	breakpoints: {
+		0: {
+			slidesPerView: 3,  // Показываем по 3 слайда на мобилках
+			spaceBetween: 12   // Меньший промежуток на мобилках
+		},
+		768: {
+			slidesPerView: 5,  // Возвращаем 5 слайдов
+			spaceBetween: 16   // Стандартный промежуток
+		},
+		1200: {
+			slidesPerView: 7,  // Возвращаем 5 слайдов
+			spaceBetween: 16   // Стандартный промежуток
+		},
+	}
+});
+
+const swiper5 = new Swiper('.swiper5', {
+	slidesPerView: 3,  // Показываем по 3 слайда
+	spaceBetween: 16,   // Промежуток между слайдами
+	loop: true, // Зацикливание
+
+	// Добавляем пагинацию для мобильных
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	// Добавляем адаптивность для мобильных устройств
+	breakpoints: {
+		0: {
+			slidesPerView: 1,  // Показываем по 3 слайда на мобилках
+			spaceBetween: 12   // Меньший промежуток на мобилках
+		},
+		480: {
+			slidesPerView: 2,  // Возвращаем 5 слайдов
+			spaceBetween: 16,   // Стандартный промежуток
+			// // Скрываем пагинацию на десктопе
+			// pagination: false
+		},
+		768: {
+			slidesPerView: 3,  // Возвращаем 5 слайдов
+			spaceBetween: 16,   // Стандартный промежуток
+			// Скрываем пагинацию на десктопе
+			pagination: false
+		}
+	}
+});
+
 class accordionAccordion
 {
 	constructor()
