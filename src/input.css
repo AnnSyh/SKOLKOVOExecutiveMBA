@@ -133,7 +133,7 @@ body {
 
 
 .more-details {
-	@apply text-white font-bold text-xl cursor-pointer relative flex items-baseline gap-2;
+	@apply text-white font-bold text-base md:text-xl cursor-pointer relative flex items-baseline gap-2;
 
 	&:after {
 		content: "";
@@ -211,7 +211,7 @@ body {
 
 
 .btn-menu {
-	@apply bg-tertiary text-secondary py-4 px-6;
+	@apply bg-tertiary text-secondary text-[14px] md:text-base py-[13px] px-[18px]  md:py-4 md:px-6;
 
 	&:hover {
 		@apply bg-secondary text-tertiary rounded-full;

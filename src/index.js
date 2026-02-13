@@ -28,11 +28,10 @@ const swiper1 = new Swiper('.swiper1', {
 });
 
 const swiper2 = new Swiper('.swiper2', {
-	slidesPerView: 3,  // Показываем по 4 слайда
-	spaceBetween: 16,   // Промежуток между слайдами
-	loop: true, // Зацикливание
+	slidesPerView: 3,
+	spaceBetween: 16,
+	loop: true,
 
-	// Добавляем пагинацию для мобильных
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
@@ -40,19 +39,16 @@ const swiper2 = new Swiper('.swiper2', {
 
 	breakpoints: {
 		0: {
-			slidesPerView: 1,  // Показываем по 3 слайда на мобилках
-			spaceBetween: 12   // Меньший промежуток на мобилках
+			slidesPerView: 1,
+			spaceBetween: 12
 		},
 		480: {
-			slidesPerView: 2,  // Возвращаем 5 слайдов
-			spaceBetween: 16,   // Стандартный промежуток
-			// // Скрываем пагинацию на десктопе
-			// pagination: false
+			slidesPerView: 2,
+			spaceBetween: 16,
 		},
 		768: {
-			slidesPerView: 3,  // Возвращаем 5 слайдов
-			spaceBetween: 16,   // Стандартный промежуток
-			// Скрываем пагинацию на десктопе
+			slidesPerView: 3,
+			spaceBetween: 16,
 			pagination: false
 		}
 	}
@@ -62,6 +58,26 @@ const swiper3 = new Swiper('.swiper3', {
 	slidesPerView: 3,  // Показываем по 4 слайда
 	spaceBetween: 16,   // Промежуток между слайдами
 	loop: true, // Зацикливание
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+			spaceBetween: 12
+		},
+		480: {
+			slidesPerView: 2,
+			spaceBetween: 16,
+		},
+		768: {
+			slidesPerView: 3,
+			spaceBetween: 16,
+			pagination: false
+		}
+	}
 });
 
 const swiper4 = new Swiper('.swiper4', {
