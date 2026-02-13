@@ -28,15 +28,56 @@ const swiper1 = new Swiper('.swiper1', {
 });
 
 const swiper2 = new Swiper('.swiper2', {
-	slidesPerView: 3,  // Показываем по 4 слайда
-	spaceBetween: 16,   // Промежуток между слайдами
-	loop: true, // Зацикливание
+	slidesPerView: 3,
+	spaceBetween: 16,
+	loop: true,
+
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+			spaceBetween: 12
+		},
+		480: {
+			slidesPerView: 2,
+			spaceBetween: 16,
+		},
+		768: {
+			slidesPerView: 3,
+			spaceBetween: 16,
+			pagination: false
+		}
+	}
 });
 
 const swiper3 = new Swiper('.swiper3', {
 	slidesPerView: 3,  // Показываем по 4 слайда
 	spaceBetween: 16,   // Промежуток между слайдами
 	loop: true, // Зацикливание
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+			spaceBetween: 12
+		},
+		480: {
+			slidesPerView: 2,
+			spaceBetween: 16,
+		},
+		768: {
+			slidesPerView: 3,
+			spaceBetween: 16,
+			pagination: false
+		}
+	}
 });
 
 const swiper4 = new Swiper('.swiper4', {
