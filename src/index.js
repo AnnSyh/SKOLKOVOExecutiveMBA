@@ -194,11 +194,23 @@ const swiper7 = new Swiper('.swiper7', {
 	}
 });
 
+const swiper8 = new Swiper('.swiper8', {
+	slidesPerView: 1,
+	spaceBetween: 16,
+	loop: true,
+
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	}
+
+});
+
 class accordionAccordion
 {
 	constructor()
 	{
-		this.items = document.querySelectorAll('.accordion-item');
+		this.items = document.querySelectorAll('.accordion-item-js');
 		this.init();
 	}
 
@@ -206,9 +218,9 @@ class accordionAccordion
 	{
 		this.items.forEach(item =>
 		{
-			const toggle = item.querySelector('.accordion-toggle');
-			const content = item.querySelector('.accordion-content');
-			const icon = item.querySelector('.accordion-icon');
+			const toggle = item.querySelector('.accordion-toggle-js');
+			const content = item.querySelector('.accordion-content-js');
+			const icon = item.querySelector('.accordion-icon-js');
 
 			toggle.addEventListener('click', () =>
 			{
@@ -220,8 +232,8 @@ class accordionAccordion
 		if (this.items.length > 0)
 		{
 			const firstItem = this.items[ 0 ];
-			const firstContent = firstItem.querySelector('.accordion-content');
-			const firstIcon = firstItem.querySelector('.accordion-icon');
+			const firstContent = firstItem.querySelector('.accordion-content-js');
+			const firstIcon = firstItem.querySelector('.accordion-icon-js');
 			this.openItem(firstItem, firstContent, firstIcon);
 		}
 	}
@@ -244,15 +256,13 @@ class accordionAccordion
 	{
 		item.classList.add('open');
 		content.style.maxHeight = content.scrollHeight + 'px';
-		icon.textContent = '+';
-		icon.classList.add('rotate-45');
+		icon.classList.add('rotate-45'); 
 	}
 
 	closeItem(item, content, icon)
 	{
 		item.classList.remove('open');
 		content.style.maxHeight = '0';
-		icon.textContent = '+';
 		icon.classList.remove('rotate-45');
 	}
 
@@ -262,13 +272,14 @@ class accordionAccordion
 		{
 			if (item.classList.contains('open'))
 			{
-				const content = item.querySelector('.accordion-content');
-				const icon = item.querySelector('.accordion-icon');
+				const content = item.querySelector('.accordion-content-js');
+				const icon = item.querySelector('.accordion-icon-js');
 				this.closeItem(item, content, icon);
 			}
 		});
 	}
 }
+
 
 // Инициализация при загрузке страницы
 document.addEventListener('DOMContentLoaded', () =>

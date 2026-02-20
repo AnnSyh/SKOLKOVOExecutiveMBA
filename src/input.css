@@ -94,36 +94,16 @@ body {
     top: 0;
     z-index: 1
 }
+/* --------------------кнопки--------------------------------- */
 
-.button {
-	@apply p-7 bg-white;
-}
-.button-big,
-.button-big-invers {
+.button-square {
 	@apply px-8 py-7 text-2xl font-semibold cursor-pointer relative flex items-baseline justify-center gap-4;
 
-	&:after {
-		content: "";
-		display: block;
-		width:10px;
-		height: 15px;
-		min-width:10px;
-		min-height: 15px;
-		background-color: currentColor;
-		clip-path: polygon(0 0, 0% 100%, 100% 50%);
-	}
-	&:hover {
-		@apply bg-violet text-white;
-	}
-}
-.button-big {
-	@apply bg-white text-violet;
+	@apply selection:before:content-[''] before:block before:w-[10px] before:h-[15px] before:min-w-[10px] before:min-h-[15px] before:bg-current before:[clip-path:polygon(0_0,0%_100%,100%_50%)];
 
-	&:hover {
-		@apply bg-violet text-white;
-	}
 }
-.button-big-invers {
+
+.button-square {
 	@apply bg-violet text-white;
 
 	&:hover {
@@ -131,19 +111,54 @@ body {
 	}
 }
 
-
-.more-details {
-	@apply text-white font-bold text-base md:text-xl cursor-pointer relative flex items-baseline gap-2;
-
-	&:after {
-		content: "";
-		display: block;
-		width:6px;
-		height: 11px;
-		background-color: currentColor;
-		clip-path: polygon(0 0, 0% 100%, 100% 50%);
-	}
+/* ---------------------------------------- */
+.btn {
+	@apply bg-violet text-white text-base font-semibold sm:text-xl py-[19px] px-[20px] sm:py-6 sm:px-8 cursor-pointer;
+	@apply hover:bg-white hover:text-violet;
+	@apply flex gap-2 w-fit items-center justify-center whitespace-nowrap no-underline relative;
 }
+.group:hover .btn {
+    @apply bg-white text-violet;
+}
+
+.btn_array {
+	@apply [&:after]:content-[''] [&:after]:block [&:after]:w-[7px] [&:after]:h-[14px] [&:after]:min-w-[7px] [&:after]:min-h-[14px] ;
+	@apply [&:after]:bg-current [&:after]:[clip-path:polygon(0_0,0%_100%,100%_50%)];
+}
+
+.btn_inverse {
+	@apply bg-white text-violet;
+	@apply hover:bg-violet hover:text-white;
+}
+.group:hover .btn_inverse {
+	@apply bg-violet text-white;
+}
+
+.btn-black {
+	@apply bg-[#10182A] text-white;
+	@apply hover:bg-white hover:text-[#10182A];
+}
+.group:hover .btn-black {
+	@apply bg-white text-violet;
+}
+
+.btn-gray {
+	@apply bg-[#EFEFF0] text-violet;
+}
+
+.link {
+	@apply text-violet flex gap-2 items-center text-base lg:text-xl font-semibold cursor-pointer;
+	@apply [&:after]:content-[''] [&:after]:block [&:after]:w-[7px] [&:after]:h-[14px] [&:after]:min-w-[7px] [&:after]:min-h-[14px] ;
+	@apply [&:after]:bg-current [&:after]:[clip-path:polygon(0_0,0%_100%,100%_50%)];
+}
+.link-white {
+	@apply text-white;
+}
+.link-white-60 {
+	@apply text-white opacity-60;
+}
+
+/* ----------------------------------------- */
 
 .card-interest {
 	/* @apply  flex flex-col h-full flex-1 text-tertiary border-t-8  p-6 lg:min-h-[538px] relative; */
@@ -161,7 +176,6 @@ body {
 	display: flex;
 }
 .card-interest {
-	/* height: 480px !important; Фиксированная высота */
 	display: flex !important;
 	flex-direction: column !important;
 }
@@ -170,11 +184,12 @@ body {
 	display: flex !important;
 	flex-direction: column !important;
 	justify-content: flex-end !important;
-	margin-top: 0 !important; /* Убираем процентные отступы */
+	margin-top: 0 !important;
 }
 
+
+/* --------------слайдеры---------------------------------- */
 .swiper5 {
-	/* Пагинация всегда видна и не исчезает */
 	.swiper-pagination {
 		position: absolute !important;
 		left: 0 !important;
@@ -185,7 +200,6 @@ body {
 		padding: 10px 0 !important;
 	}
 
-	/* Стили для пуль (точек) */
 	.swiper-pagination-bullet {
 		width: 8px !important;
 		height: 8px !important;
@@ -227,6 +241,7 @@ body {
 	}
 }
 
+/* ----------------наборы кнопок----------------- */
 
 .btn-menu {
 	@apply bg-tertiary text-secondary text-[14px] md:text-base py-[13px] px-[18px]  md:py-4 md:px-6;
@@ -241,10 +256,6 @@ body {
 
 .btn-menu-small {
 	@apply bg-white text-gray py-1 px-2;
-
-	/* &:hover {
-		@apply rounded-full;
-	} */
 }
 .btn-menu-small-active {
 	@apply rounded-full;
@@ -262,11 +273,27 @@ body {
     }
 
 
-.open .accordion-icon-bg {
-	@apply bg-[#402ECB] text-white;
-}
+	.accordion-icon-js {
+		transition: transform 0.3s ease;
+	}
 
-/* Дополнительные стили для таймлайна */
+	.accordion-icon-js.rotate-45 {
+		transform: rotate(180deg);
+	}
+
+
+	.open .accordion-icon-bg,
+	.accordion-icon-bg:hover  {
+		@apply  bg-violet;
+   }
+
+   .open .accordion-icon-bg svg path,
+	.accordion-icon-bg:hover svg path {
+		fill: white;
+   }
+
+
+
 .timeline-wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -284,11 +311,8 @@ body {
 		content:'';
 		width: 2px;
 		height: 24px;
-		background-color: #F7F7F7;
-		position: absolute;
-		left: 0px;
 
-		@apply hidden md:block;
+		@apply hidden md:block bg-tertiary absolute left-0;
 	}
 
 }
@@ -322,15 +346,3 @@ body {
 select option {
     color: #374151;
 }
-
-/* песочные часы */
-/* .hourglass {
-	clip-path: polygon(
-		0% 0%,
-		5% 50%,
-		0% 100%,
-		100% 100%,
-		95% 50%,
-		100% 0%
-	);
-} */

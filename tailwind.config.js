@@ -37,10 +37,6 @@ module.exports = {
           DEFAULT: '#656462',// bg-gray
           dark: '#3d3b3c',   // bg-gray-dark
         },
-        rosy: {
-          DEFAULT: '#fffcfb',// bg-rosy
-          dark: '#fff5f7', // bg-rosy-dark
-        },
       },
       backgroundImage: {
         'gradient-to-br': 'linear-gradient(to bottom right, var(--tw-gradient-stops))',
